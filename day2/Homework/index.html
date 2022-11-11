@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tìm hiểu kiến thức</title>
+  </head>
+  <body>
+    <h1>Bài tập về nhà buổi 2: Tìm hiểu kiến thức</h1>
+    <div>
+      <h2>1. Quy tắc đặt tên</h2>
+      <p>
+        Chỉ có hai vấn đề khó khăn trong Khoa học máy tính: vô hiệu hóa bộ đệm
+        và đặt tên cho mọi thứ.
+      </p>
+      <p>_Phil Karlton_</p>
+      <p>
+        Thực tế là, hầu hết các cơ sở mã CSS đôi khi được phát triển mà không có
+        bất kỳ cấu trúc hoặc quy ước đặt tên cụ thể nào. Điều này dẫn đến việc
+        cơ sở mã CSS không thể khắc phục được trong thời gian dài.
+      </p>
+      <p>
+        BEM đảm bảo rằng tất cả những người tham gia phát triển một trang web
+        đều hoạt động với một cơ sở mã duy nhất và dùng cùng một ngôn ngữ. Sử
+        dụng cách đặt tên phù hợp sẽ giúp bạn có chuẩn bị tốt hơn cho những thay
+        đổi trong thiết kế của trang web sau này.
+      </p>
+    </div>
+    <div>
+      <h2>2. Box model là gì? Các thuộc tính cơ bản của box model</h2>
+      <p>
+        Box Model là một kỹ thuật cơ bản nhất trong CSS Layout và được sử dụng
+        để bạn mô tả về khoảng cách mà mỗi phần tử trên website được sở hữu, hay
+        nói cách khác là kỹ thuật tinh chỉnh khoảng cách hiển thị cho mỗi phần
+        tử trên website.
+      </p>
+      <p>Kỹ thuật Box Model trong CSS bao gồm 4 phần quan trọng đó là:</p>
+      <ul>
+        <li>Margin: Khoảng cách tính từ bên ngoài của phần tử.</li>
+        <li>Border: Đường viền của phần tử.</li>
+        <li>Padding: Khoảng cách tính từ bên trong của phần tử.</li>
+        <li>Content: Nội dung trong phần tử.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>
+        3. quy tắc chi phối cách thuộc tính CSS áp dụng cho phần tử: Cascade -
+        Specificity - Inheritance là gì?
+      </h2>
+      <p>
+        Đây là bước đầu tiên để xác định xem "rules" CSS nào sẽ được áp dụng.
+        Importance sẽ dựa trên "nguồn gốc xuất xứ" của Style Sheets để quyết
+        định xem nó có được áp dụng không.
+      </p>
+      <p>
+        <p>Ta hãy xem qua ảnh sau:</p>
+        <img
+          src="https://images.viblo.asia/fd18e48f-c2a6-4a9d-af4a-b0f6baa45c3a.png"
+          alt="Ví dụ"
+        />
+      </p>
+      <div>
+        <p>Cascade</p>
+        <ol>
+            <li>
+                Vị trí và thứ tự xuất hiện: thứ tự xuất hiện của các quy tắc CSS 
+                của bạn
+            </li>
+            <li>
+                Tính cụ thể: một thuật toán xác định bộ chọn CSS nào có kết 
+                    quả phù hợp nhất
+             </li>
+             <li>
+                Nguồn gốc: thứ tự khi CSS xuất hiện và nó đến từ đâu, cho dù đó 
+                là kiểu trình duyệt, CSS từ tiện ích mở rộng trình duyệt hay CSS 
+                do bạn sáng tác
+             </li>
+             <li>
+                Tầm quan trọng: một số quy tắc CSS có trọng số cao hơn các quy 
+                tắc khác, đặc biệt là với loại quy tắc quan trọng
+             </li>
+        </ol>
+        <p>Importance</p>
+        <ol>
+          <li>
+            User Agent Styles: Đây là những CSS mặc định mà các trình duyệt đặt
+            sẵn, nếu như file HTML của bạn không được style bằng CSS, nó sẽ vẫn
+            có một vài Style mặc định (như là h1 sẽ to và được bôi đậm,...)
+          </li>
+          <li>
+            User Styles: Một vài người dùng sẽ có các Style Custom được cài đặt
+            cho cá nhân họ, những Style này chỉ áp dụng cho bản thân người dùng
+            đó và nó được cài dưới dạng local.
+          </li>
+          <li>
+            Author Styles: Đây là CSS do chúng ta - những developer viết nên và
+            gửi qua các server về máy khách.
+          </li>
+        </ol>
+        <p>Vậy xét theo mức độ Importace, CSS do server gửi đến máy khách luôn 
+            được ưu tiên cao nhất, do đó nó sẽ không bị CSS do trình duyệt mặc 
+            định hay của máy khách custom ghi đè.
+        </p>
+        <p>Specificity</p>
+        <p>Tính cụ thể là lý do phổ biến cho việc các quy tắc CSS không được áp 
+            dụng cho một số elements, mặc dù bạn nghĩ rằng chúng được áp dụng.
+        </p>
+        <p>Trong CSS có khái niệm CSS selector, khái niệm này liên quan chặt chẽ 
+            với "Specificity". Bởi vì CSS sẽ phân cấp các selector này, xem 
+            selector nào "specific" hơn thì sẽ áp dụng selector đó.
+        </p>
+      </div>
+
+    </div>
+  </body>
+</html>
