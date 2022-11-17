@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTVN day5 Lý Thuyết</title>
+    
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>BTCN buổi 5: Tìm hiểu kiến thức</h1>
+      <div class="yc1">
+        <h2>1. Tìm hiểu về các thẻ HTML, Table</h2>
+        <h3>HTML</h3>
+        <p>
+          Các mẫu form trong HTML được yêu cầu khi bạn muốn thu thập một vài dữ
+          liệu từ người sử dụng. Ví dụ, khi người sử dụng đăng ký, bạn có thể
+          muốn thu thập thông tin như tên, địa chỉ email, thẻ tín dụng….
+        </p>
+        <p>
+          Một mẫu form sẽ nhận dữ liệu đầu vào từ site người sử dụng và sau đó
+          sẽ thông báo nó tới các ứng dụng back-end như CGI, ASP Script hoặc PHP
+          Script….
+        </p>
+        <p>
+          Có nhiều phần tử form có sẵn như các trường text, các trường textarea,
+          menu, checkbox …
+        </p>
+        <p>
+            Thẻ <code>form</code> được sử dụng để tạo một Form trong HTML và thẻ này có cú pháp:
+        </p>
+        <p>
+            <img src="img/cu-phap-form.png" alt="cú pháp form">
+        </p>
+        <h4>Các thuộc tính của thẻ form trong HTML</h4>
+        <p>
+            Ngoài các thuộc tính thông thường, sau đây là các thuộc tính của form hay sử dụng:
+        </p>
+        <p>
+            <img src="img/thuoc-tinh-the-form.png" alt="thuộc tính thẻ form">
+        </p>
+        <h4>Một số form hữu ích trong HTML</h4>
+        <p>
+            <ul>
+                Có các kiểu kiểm soát form khác nhau mà bạn có thể sử dụng để thu thập dữ liệu:
+
+                <li>
+                    Text Input
+                </li>
+                <li>
+                    Checkbox
+                </li>
+                <li>
+                    Radio Box
+                </li>
+                <li>
+                    Select Box
+                </li>
+                <li>
+                    File Select Box
+                </li>
+                <li>
+                    Submit
+                </li>
+                <li>
+                    ...
+                </li>
+            </ul>
+        </p>
+        <h4>Text Input trong HTML</h4>
+        <p>
+            <ul>
+                Có 3 kiểu Text Input được sử dụng trên form:
+                <li>
+                    <b>Text Input một dòng đơn</b> - Sử dụng cho các mục mà yêu cầu chỉ một dòng của dữ liệu 
+                    đầu vào của người sử dụng như các hộp tìm kiếm hoặc tên. Form này được tạo ra bằng 
+                    cách sử dụng thẻ <code>input</code>
+                </li>
+                <li>
+                    <b>Password Input</b> - Đây cũng là một Text Input một dòng đơn nhưng nó giấu các ký tự ngay sau 
+                    khi người sử dụng nhập nó. Form này được tạo ra bằng cách sử dụng thẻ <code>input</code>
+                </li>
+                <li>
+                    <b>Text Input đa dòng</b> - : Được sử dụng khi một người sử dụng được yêu cầu cung cấp thông tin mà có 
+                    thể nhiều hơn một dòng. Form này được tạo ra bằng cách sử dụng thẻ <code>textarea</code>
+                </li>
+            </ul>
+        </p>
+        <h4>Text Input một dòng đơn trong HTML</h4>
+        <p>
+            Các thuộc tính
+        </p>
+        <p>
+            <img src="img/thuoc-tinh.png" alt="thuộc tính">
+        </p>
+        <h4>Checkbox trong HTML</h4>
+        <p>
+            Checkbox được sử dụng khi có nhiều hơn một tùy chọn được yêu cầu để chọn. Checkbox cũng được tạo ra bằng 
+            cách sử dụng thẻ <code>input</code> nhưng thuộc tính type được thiết lập là <b>checkbox</b>.
+        </p>
+        <p>
+            <img src="img/check-box.png" alt="check box">
+        </p>
+        <h3>Select Box trong HTML</h3>
+        <p>
+            Một Select Box cung cấp danh sách liệt kê từ trên xuống (hộp drop down) các tùy chọn đa dạng trong một form, 
+            và tại đó người sử dụng có thể chọn một hoặc nhiều lựa chọn.
+        </p>
+        <p>
+            Dưới đây là một ví dụ về một Form với một hộp drop down.
+            <img src="img/select-box.png" alt="select box">
+        </p>
+        <h4>Button trong HTML</h4>
+        <p>
+            Có nhiều cách trong HTML để tạo các nút có thể nhấn vào được (clickable). Bạn cũng có thể sử dụng thẻ 
+            <code>input</code> để tạo các nút này bởi thiết lập thuộc tính type là button. Thuộc tính type có thể 
+            nhận các giá trị sau:
+
+            <p>
+                <img src="img/button.png" alt="button">
+            </p>
+        </p>
+        <h3>Table</h3>
+        <p>
+            Thẻ table trong HTML được sử dụng để hiển thị dữ liệu ở dạng bảng (hàng * cột). Có thể có nhiều cột 
+            trong một hàng. Các thẻ table trong HTML được sử dụng để quản lý việc bố cục trang web. Ví dụ: Phần 
+            tiêu đề, thanh điều hướng, nội dung trang, phần chân trang... Nhưng bạn nên sử dụng thẻ div thay vì 
+            table để quản lý bố cục của trang.
+        </p>
+        <h4>Các thẻ định nghĩa table trong HTML</h4>
+        <p>
+            <img src="img/dinh-nghia-the-table.png" alt="định nghĩa thẻ table">
+        </p>
+        <h4>Thuộc tính border của bảng trong HTML</h4>
+        <p>
+            <ol>
+                Có hai cách để xác định border cho các bảng trong HTML.
+                <li>
+                    Sử dụng thuộc tính border của bảng trong HTML.
+                </li>
+                <li>
+                    Sử dụng thuộc tính border trong CSS.
+                </li>
+            </ol>
+        </p>
+        <h4>Table trong HTML với cell padding</h4>
+        <p>
+            <ol>
+                Bạn có thể chỉ định padding cho tiêu đề của bảng và data của bảng bằng hai cách:
+                <li>
+                    Bằng thuộc tính cellpadding của thẻ table trong HTML
+                </li>
+                <li>
+                    Bằng tính chất padding trong CSS
+                </li>
+            </ol>
+        </p>
+        <h4>Thuộc tính colspan</h4>
+        <p>
+            Nếu bạn muốn tạo một ô có độ dài lơn hơn 1 cột, thì bạn có thể dùng thuộc tính colspan
+        </p>
+        <h4>Thuộc tính rowspan</h4>
+        <p>
+            Nếu bạn muốn tạo một ô có độ dài lơn hơn hàng, thì bạn có thể dùng thuộc tính rowspan
+        </p>
+        <h4>Thẻ caption</h4>
+        <p>
+            Thẻ caption được sử dụng để định nghĩa bảng, thẻ này chỉ được sử dụng ngay sau thẻ table
+        </p>
+      </div>
+      <div class="yc2">
+        <h2>2. Tìm hiểu tạo hiệu ứng chuyển đổi trong thiết kế web: Tránition, Animation, Transform</h2>
+        <h3>Transition</h3>
+        <p>
+            Thuộc tính transition xác định một quá trình chuyển đổi khi có một hành động.
+        </p>
+        <p>
+            Transition có các giá trị như sau:
+            <p>
+                <img src="img/thuoc-tinh-transition.png" alt="thuộc tính transition">
+            </p>
+        </p>
+        <h3>Animation</h3>
+        <p>
+            Thuộc tính animation xác định một chuyển động của một tag hay một hình ảnh, là sự tổng hợp 
+            của các thuộc tính: animation-name, animation-duration, animation-timing-function, animation-delay, 
+            animation-iteration-count, animation-direction.
+        </p>
+        <p>
+            Thuộc tính của animation
+            <p>
+                <img src="img/thuoc-tinh-animation.png" alt="thuộc tính animation">
+            </p>
+        </p>
+        <h3>Transform</h3>
+        <p>
+            Thuộc tính transform xác định một chuyển đổi 2 chiều, 3 chiều, có thể là xoay, tỷ lệ, di chuyển, nghiêng, ...
+        </p>
+        <p>
+            Thuộc tính transform
+            <p>
+                <img src="img/thuoc-tinh-transform.png" alt="thuộc tính transform">
+            </p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
