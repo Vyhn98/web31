@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid rgb(220, 205, 205);
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+
+      tr:nth-child(2n + 1) {
+        background-color: rgb(231, 160, 28);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Danh sách học viên lớp web
+      </caption>
+
+      <thead>
+        <tr>
+          <td>Họ tên</td>
+          <td>Giới tính</td>
+          <td>Quê Quán</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hà Ngọc Vỹ</td>
+          <td>Nam</td>
+          <td>Yên Bái</td>
+        </tr>
+        <tr>
+          <td>Hà Vỹ</td>
+          <td>Nam</td>
+          <td>Yên Bái</td>
+        </tr>
+        <tr>
+          <td>Đoàn Quốc Cường</td>
+          <td>Nam</td>
+          <td>Yên Bái</td>
+        </tr>
+        <tr>
+          <td>Hà Tập</td>
+          <td>Nam</td>
+          <td>Yên Bái</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Tổng số học viên</td>
+          <td>1</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
