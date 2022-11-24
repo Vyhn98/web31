@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day7 BTVN Tìm hiểu kiến thức</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Tìm hiểu kiến thức JS</h1>
+    <h2>1. Giới thiệu về ngôn ngữ JavaScrip</h2>
+    <div class="cau1">
+      <p>
+        JavaScript là một ngôn ngữ lập trình dựa trên văn bản được sử dụng cả ở
+        phía máy khách và phía máy chủ, cho phép bạn tạo các trang web tương
+        tác. Trong đó HTML và CSS là những ngôn ngữ cung cấp cấu trúc và phong
+        cách cho các trang web, thì JavaScript cung cấp cho các trang web các
+        yếu tố tương tác thu hút người dùng.
+      </p>
+      <p>
+        <ul>
+            Ưu điểm:
+            <li>
+                Ít tương tác với máy chủ hơn: có thể xác thực thông tin đầu vào của 
+                người dùng trước khi gửi trang đến máy chủ. Điều này tiết kiệm lưu 
+                lượng truy cập máy chủ, có nghĩa là ít tải hơn trên máy chủ của bạn.
+            </li>
+            <li>
+                Phản hồi ngay lập tức cho khách truy cập: Họ không phải đợi tải lại 
+                trang để xem liệu họ có quên nhập nội dung nào không.
+            </li>
+            <li>
+                Tăng tính tương tác: có thể tạo giao diện phản ứng khi người dùng di 
+                chuột qua chúng hoặc kích hoạt chúng qua bàn phím.
+            </li>
+            <li>
+                Giao diện phong phú hơn : có thể sử dụng JavaScript để bao gồm các mục 
+                như thành phần kéo và thả và thanh trượt để cung cấp Giao diện phong 
+                phú cho khách truy cập trang web của bạn.
+            </li>
+        </ul>
+        <ul>
+            Hạn chế
+            <li>
+                JavaScript phía máy khách không cho phép đọc hoặc ghi tệp. Điều này đã 
+                được giữ vì lý do bảo mật.
+            </li>
+            <li>
+                JavaScript không thể được sử dụng cho các ứng dụng mạng vì không có hỗ 
+                trợ này.
+            </li>
+            <li>
+                JavaScript không có bất kỳ khả năng đa luồng hoặc đa xử lý nào.
+            </li>
+        </ul>
+      </p>
+    </div>
+    <h2>2. Cách nhúng mã JavaScript trong trang web</h2>
+    <div class="cau2">
+        <h3>
+            Cách 1: Nhúng JavaScript kiểu Internal
+        </h3>
+        <p>
+            Nhúng Internal có thể hiểu là chúng ta chèn code JavaScript vào một cụm nào đó 
+            trong tập tin HTML. Thông thường thì anh em hay nhóm nó vào trong cặp thẻ 
+            &lt;head&gt; và  &lt;body&gt;
+        </p>
+        <p>
+            Nhúng trong cặp thẻ <code>&lt;head&gt;</code>
+            <p>
+                <img src="img/Screen Shot 2022-11-24 at 13.48.49.png" alt="nhúng cặp thẻ head">
+            </p>
+        </p>
+        <p>
+            Nhúng trong cặp thẻ <code>&lt;body&gt;</code>
+            <p>
+                <img src="img/nhung the body.png" alt="nhúng cặp thẻ body">
+            </p>
+        </p>
+        <h3>Cách 2: Nhúng JavaScript kiểu inline</h3>
+        <p>
+            Đối với cách <b>nhúng inline</b> chúng ta có thể chèn ngay vị trí bất kỳ của một dòng 
+            code HTML.Trong ví dụ dưới đây mình sẽ tạo 03 vùng chọn tương ứng với 03 thẻ &lt;div&gt;
+            ở giữa là class <code>.vung-chon-tuy-y</code>, và đặt vào nó một đoạn JavaScript cho nó 
+            làm việc.
+        </p>
+        <p>
+            <img src="img/nhung kieu inline.png" alt="nhúng kiểu inline">
+        </p>
+        <h3>Cách 3: Nhúng JavaScript kiểu External</h3>
+        <p>
+            Nếu cách một và cách 02 chúng ta nhúng file JavaScript vào trong văn bản HTML thì cách 
+            nhúng External sẽ khác một chút, để nhúng kiểu này đầu tiên các bạn dán code JavaScript 
+            vào một file txt và lưu lại với định dạng .JS
+        </p>
+        <p>
+            Tiếp theo trong thẻ <code>&lt;script&gt;</code> , để viết JavaScript thì chúng ta viết 
+            đường dẫn đến file JavaScript đã lưu sử dụng cú pháp bên dưới. Bạn có thể tạo một thư 
+            mục và copy 02 cái file HTML và JS vào trong đó.
+        </p>
+        <p>
+            <img src="img/Nhung kieu External.png" alt="Nhúng kiểu External">
+        </p>
+    </div>
+    <h2>3. Sử dụng Chrome DevTool (console)</h2>
+    <div class="cau3">
+        <p>
+            Tab Console hiển thị code JavaScript. Nó cung cấp cho bạn thông tin về các yếu tố tương 
+            tác trên một trang. Trong tab console, bạn có thể viết JavaScript để tương tác với trang 
+            web bạn đang xem và nó cũng cho phép bạn viết thông báo cho chính mình bằng JavaScript 
+            của các trang web bạn đang xây dựng, sau đó sẽ hiển thị trong tab console để cho biết rằng 
+            JS đã được thực thi .
+        </p>
+        <p>
+            <img src="https://websitehcm.com/wp-content/uploads/2021/09/image-77.png" alt="Cách sử dụng Chrome">
+        </p>
+    </div>
+    <h2>4. Các kiểu dữ liệu, biểu diễn giá trị trong JavaScript</h2>
+    <div class="cau4">
+        <ul>
+            JavaScript có 8 kiểu dữ liệu cơ bản, trong đó, có 7 kiểu dữ liệu nguyên thủy (<b>boolean</b>, 
+            <b>null</b>, <b>undefined</b>, <b>number</b>, <b>BigInt</b>, <b>string</b>, <b>symbol</b>) 
+            và 1 kiểu dữ liệu dạng tham chiếu (<b>object</b>).
+            <li>
+                Kiểu dữ liệu <code>boolean</code>: bao gồm hai giá trị true và false dùng để biểu diễn đúng 
+                và sai.
+            </li>
+            <li>
+                Kiểu dữ liệu <code>null</code>: chỉ gồm một giá trị <code>null</code>, dùng để biểu thị 
+                trạng thái không biết giá trị.
+            </li>
+            <li>
+                Kiểu dữ liệu <code>undefined</code>: chỉ gồm một giá trị <code>undefined</code>, dùng 
+                để biểu thị trạng thái chưa gán giá trị.
+            </li>
+            <li>
+                Kiểu dữ liệu <code>number</code>: dùng để biểu diễn số nguyên hoặc số thực. Trong đó, số 
+                nguyên giới hạn trong đoạn ±(253-1.
+            </li>
+            <li>
+                Kiểu dữ liệu <code>BigInt</code>: dùng để biểu diễn số nguyên lớn, có độ dài tùy ý. Để biểu 
+                diễn số thuộc kiểu <code>BigInt</code>, bạn chỉ cần thêm chữ cái <code>n</code> ở cuối.
+            </li>
+            <li>
+                Kiểu dữ liệu <code>string</code>: dùng để biểu diễn kí tự, chuỗi ký tự,... bằng cách sử dụng 
+                dấu nháy đơn (<code>'</code>), nháy kép (<code>"</code>) hoặc dấu "backtick" (<code>`</code>). 
+                Mỗi string có thể chứa một kí tự, nhiều kí tự hoặc không chứa kí tự nào (empty string).
+            </li>
+            <li>
+                Kiểu dữ liệu <code>symbol</code>: dùng để tạo ra những giá trị duy nhất, thường dùng làm "key" 
+                cho <code>object</code>.
+            </li>
+            <li>
+                Kiểu dữ liệu <code>object</code>: là tập hợp của các cập <b>key-value</b>.
+            </li>
+        </ul>
+    </div>
+    <h2>5. Toán tử</h2>
+    <div class="cau5">
+        <ul>
+            <b>Toán tử</b> là một công cụ để thao tác với dữ liệu. Khi đó, đối tượng mà toán tử thao tác đến gọi 
+            là <b>toán hạng</b>. Tùy thuộc vào số lượng <b>toán hạng</b> mà JavaScript chia ra thành:
+            <li>
+                Toán tử một ngôi (<b>unary</b>): có một toán hạng
+            </li>
+            <li>
+                Toán tử hai ngôi <b>(binary</b>): có hai toán hạng
+            </li>
+            <li>
+                Toán tử ba ngôi (<b>ternary</b>): có ba toán hạng
+            </li>
+            <li>
+                Toán tử đa ngôi (<b>n-ary</b>): có trên ba toán hạng
+            </li>
+        </ul>
+        <h3>Các toán tử JavaScript</h3>
+        <ul>
+            Nếu chia theo chức năng thì JavaScript có các loại toán tử cơ bản sau đây:
+            <li>
+                Toán tử số học
+            </li>
+            <li>
+                Toán tử gán
+            </li>
+            <li>
+                Toán tử bitwise
+            </li>
+            <li>
+                Toán tử dấu phẩy
+            </li>
+            <li>
+                Toán tử so sánh
+            </li>
+            <li>
+                Toán tử logic
+            </li>
+            <li>
+                Toán tử điều kiện rẽ nhánh ?:
+            </li>
+            <li>
+                Toán tử "Nullish Coalescing" ??
+            </li>
+        </ul>
+    </div>
+    <h2>6. Kiểu dữ liệu trong Javascript</h2>
+    <div class="cau6">
+        <h3>Trong Javascript có 5 kiểu dữ liệu khác nhau có thể chứa các giá trị:</h3>
+        <ul>
+            <li>
+                <code>string</code>
+            </li>
+            <li>
+                <code>number</code>
+            </li>
+            <li>
+                <code>boolean</code>
+            </li>
+            <li>
+                <code>object</code>
+            </li>
+            <li>
+                <code>function</code>
+            </li>
+        </ul>
+        <h4>Chuyển đổi bằng Javascript function</h4>
+        <h5>Chuyển đổi Numbers sang Strings</h5>
+        <p>
+            Phương thức toàn cục <code>String()</code> có thể chuyển numbers sang strings.
+        </p>
+        <p>
+            <img src="img/toan cục string.png" alt="toàn cục string">
+        </p>
+        <p>
+            Phương thức  <code>toString()</code> cũng thực hiện tương tự.
+        </p>
+        <p>
+            <img src="img/to string.png" alt="To String">
+        </p>
+        <h5>
+            Chuyển đổi Booleans sang Strings
+        </h5>
+        <p>
+            Phương thức toàn cục <code>String()</code> có thể chuyển booleans sang strings
+        </p>
+        <p>
+            <img src="img/boolean sang string.png" alt="boolean sang string">
+        </p>
+        <p>
+            Phương thức <code>toString()</code> cũng thực hiện tương tự.
+        </p>
+        <p>
+            <img src="img/boolean sang to string.png" alt="boolean sang to string">
+        </p>
+        <h5>Chuyển đổi Dates sang Strings</h5>
+        <p>
+            Phương thức toàn cục <code>String()</code> có thể chuyển dates sang strings.
+        </p>
+        <p>
+            <img src="img/date sang string.png" alt="date sang string">
+        </p>
+        <p>
+            Phương thức <code>toString()</code> cũng thực hiện tương tự.
+        </p>
+        <p>
+            <img src="img/date sang to string.png" alt="date sang to string">
+        </p>
+        <h5>Chuyển đổi Strings sang Numbers</h5>
+        <p>Phương thức toàn cục <code>String()</code>  có thể chuyển strings sang numbers.</p>
+        <p>Chuỗi chứa số (ví dụ : "3.14") chuyển sang numbers (3.14).</p>
+        <p>Chuỗi rỗng chuyển thành 0.</p>
+        <p>Mọi trường hợp còn lại chuyển sang <code>NaN</code> (Not a Number).</p>
+        <p>
+            <img src="img/string sang number.png" alt="string sang number">
+        </p>
+    </div>
+    <h2>6. Biến</h2>
+    <div class="cau6">
+        <p>
+            Biến là "tên biểu tượng" dùng để đại diện cho một giá trị. Và giá trị của biến có thể 
+            thay đổi trong chương trình.
+        </p>
+        <p>
+            Giả sử <b>x</b> là số lượng người đang đọc bài viết này, thì <b>x</b> chính là một biến. 
+            Ví dụ giá trị của biến <b>x</b> bây giờ là 100. Nhưng năm phút sau, số lượng người đọc 
+            bài viết tăng lên thành 150. Lúc này, giá trị của biến <b>x</b> sẽ là 150.
+        </p>
+        <h4>Cách khai báo biến trong JavaScript</h4>
+        <p>
+            Để khai báo biến trong JavaScript, bạn dùng từ khóa <b>let</b> (từ khóa <b>var</b> đã lỗi 
+            thời và không nên sử dụng).
+        </p>
+        <p>
+            <code>let &lt;tên biến&gt;</code>
+        </p>
+        <p>Ví dụ câu lệnh sau khai báo một biến số có tên là "language":</p>
+        <p>
+            <code>let launguage;</code>
+        </p>
+    </div>
+  </body>
+</html>
