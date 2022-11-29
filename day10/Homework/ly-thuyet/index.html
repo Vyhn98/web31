@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN day10</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <script src="script/hello.js"></script>
+    <div>
+        <h1>Bài tập kiến thức - Tìm hiểu về function</h1>
+    </div>
+    <div>
+        <h2>Function(Hàm) là gì?</h2>
+        <p>
+            <b>Function</b> (hàm, chức năng), gọi chung là <b>subprogram (chương trình con)</b> có thể được gọi ở bên
+            ngoài hoặc bêntrong chính nó.
+        </p>
+        <p>
+            Nó bao gồm tập hợp các câu lệnh gọi là <b>function body</b>. Các giá trị có thể truyền đến một hàm, và một
+            hàm có thể trả về giá trị.
+        </p>
+        <p>Bây giờ, với các ứng dụng hiện đại, các function có thể là một chương trình hoàn chỉnh, chứ không phải là
+            khái niệm tổng quát như ''subprogram" nữa. Có sự khác nhau giữa function và procedure (thủ tục) rằng sự lý
+            tưởng của function nên trả về một giá trị còn procedure thì không ( bây giờ điều này có thể thay đổi theo
+            ngôn ngữ lập trình).
+        </p>
+        <h3>1. Khai báo hàm</h2>
+            <ol>
+                Để khai báo hàm, chúng ta dùng từ khóa <code>function</code>, theo sau nó là:
+                <li>
+                    Tên hàm
+                </li>
+                <li>
+                    Danh sách các tham số truyền vào hàm, được đặt trong ngoặc đơn và cách nhau bởi dấu phẩy.
+                </li>
+                <li>
+                    Các câu lệnh của JavaScript để tạo ra một hàm, được đặt trong ngoặc nhọn
+                    <code>&#10100;...&#10101;</code>
+                </li>
+            </ol>
+            <p>
+                Ví dụ, để định nghĩa một hàm in ra chữ "Hello World" ở console:
+                <img src="/day10/Homework/ly-thuyet/img/khai bao ham.jpg" alt="khai báo hàm">
+            </p>
+            <h3>2. Biểu thức hàm (Hàm trong biến)</h2>
+                <p>
+                    Trong khi việc khai báo hàm ở trên là một câu lệnh về mặt cú pháp, các hàm cũng có thể tạo ra bằng
+                    một biểu
+                    thức hàm <b>(function expression)</b>. Một hàm như vậy có thể <b>nặc danh</b>; nó không cần phải có
+                    tên. Ví
+                    dụ, hàm
+                    sayHello ở trên có thể được khai báo như sau:
+                </p>
+                <p>
+                    <img src="/day10/Homework/ly-thuyet/img/khai bao ham trong bien.jpg" alt="khai báo hàm trong biến">
+                </p>
+                <p>
+                    Tuy nhiên, một cái tên có thể được cung cấp trong một biểu thức hàm. Việc cung cấp tên cho phép hàm
+                    có thể
+                    chạy chính nó, hoặc có thể sử dụng hệ thống debug để nhận dạng hàm trong stack traces.
+                </p>
+                <p>
+                    <img src="/day10/Homework/ly-thuyet/img/khai bao bien trong ham 2.jpg"
+                        alt="lai báo biến trong hàm VD2">
+                </p>
+                <h3>3. Các ràng buộc về tên hàm</h2>
+                    <ol>
+                        Javascript cũng giống như các ngôn ngữ khác nó cũng có các ràng buộc về tên hàm sau đây:
+                        <li>
+                            Tên hàm phải được bắt đầu bằng chữ cái (a-z,A-Z) hoặc ký tự <code>_</code>.
+                        </li>
+                        <li>
+                            Tên hàm không được bắt đầu bằng số, các ký tự khác ký tự <code>_</code>.
+                        </li>
+                    </ol>
+    </div>
+    <div>
+        <h2>Các loại hàm</h2>
+        <h3>1. Hàm cơ bản</h3>
+        <p>
+            Đây là dạng hàm cơ bản nhất trong Javascript, cú pháp có dạng như sau:
+        </p>
+        <p>
+            <img src="/day10/Homework/ly-thuyet/img/ham co ban.jpg" alt="hàm cơ bản">
+        </p>
+        <p>
+            Trong đó: doSomeThing là tên của hàm bạn muốn đặt và <code>function</code> là từ khóa bắt buộc.
+        </p>
+        <p>
+            Ví dụ: Tạo hàm in ra tên website codelearn ở console
+            <img src="/day10/Homework/ly-thuyet/img/ham co ban 2.jpg" alt="Hàm cơ bản 2">
+        </p>
+        <h3>2. Hàm có tham số truyền vào</h3>
+        <p>
+            Đây là một dạng hàm rất hay được sử dụng, cú pháp có dạng như sau:
+            <img src="/day10/Homework/ly-thuyet/img/ham co tham so truyen vao.jpg" alt="Hàm có tham số truyền vào">
+        </p>
+        <ol>
+            Trong đó:
+            <li>
+                <b>funName</b> là tên của hàm các bạn muốn đặt.
+            </li>
+            <li>
+                <b>param_1,...,pram_n</b> là các tham số mà các bạn muốn truyền vào hàm(không giới hạn số lượng).
+            </li>
+        </ol>
+        <p>
+            VD: Tạo hàm tính tổng 2 số
+            <img src="/day10/Homework/ly-thuyet/img/ham co tham so truyen vao 2.jpg" alt="">
+        </p>
+        <h3>3. Hàm có tham số mặc định</h3>
+        <p>
+            Đây thực ra là dạng hàm có truyền tham số và đồng thời xét luôn giá trị mặc định cho các tham số đó. Cú
+            pháp:
+            <img src="/day10/Homework/ly-thuyet/img/ham co tham so mac dinh.jpg" alt="Hàm có tham số mặc định">
+        </p>
+        <p>
+        <ol>
+            Trong đó:
+            <li>
+                <b>funName</b> là tên của hàm các bạn muốn đặt.
+            </li>
+            <li>
+                <b>param_1,...,pram_n</b> là các tham số mà các bạn muốn truyền vào hàm(không giới hạn số lượng).
+            </li>
+            <li>
+                <b>value_1,...,value_n</b> là các giá trị tương ứng với các pram.
+            </li>
+        </ol>
+        </p>
+        <p>
+            VD: với hàm <b>getSum</b> ở trên mình sẽ xét tham số mặc định cho nó.
+            <img src="/day10/Homework/ly-thuyet/img/ham co tham so mac dinh 2.jpg" alt="Hàm có tham số mặc định 2">
+        </p>
+        <h3>4. Hàm có và không trả về giá trị</h3>
+        <p>
+        <ol>
+            Trong javascript có hai loại hàm,đó là hàm có giá trị trả về và hàm không có giá trị trả về.
+            <li>
+                Đối với hàm có giá trị trả về thì phải sử dụng từ khóa <code>return</code>
+            </li>
+            <li>
+                Và ngược lại đối với hàm không có giá trị trả về thì không có từ khóa <code>return</code>
+            </li>
+        </ol>
+        VD: khai báo hàm getSum ở trên là hàm có giá trị trả về.
+        <img src="/day10/Homework/ly-thuyet/img/ham co va khong tra ve gia tri.jpg"
+            alt="Hàm có và không trả về giá trị">
+        </p>
+    </div>
+    <div>
+        <h2>Gọi hàm</h2>
+        <p>
+            Việc định nghĩa một hàm sẽ không thực thi nó. Định nghĩa một hàm đơn giản chỉ là đặt tên cho hàm và chỉ định
+            những việc cụ thể sẽ làm khi hàm đó được gọi.
+        </p>
+        <p>
+            Ví dụ, nếu bạn định nghĩa hàm sayHello, bạn có thể gọi nó như sau:
+            <img src="/day10/Homework/ly-thuyet/img/goi ham.jpg" alt="Gọi hàm">
+        </p>
+        <p>
+            Câu lệnh trên gọi hàm sayHello, kết quả trả về chữ "Hello World" tại console.
+        </p>
+        <p>
+            Các hàm phải đặt trong phạm vi (in scope) khi nó được gọi, nhưng việc khai báo hàm có thể được hoisted (câu
+            lệnh khai báo hàm xuất hiện bên dưới dòng gọi hàm trong đoạn code), như ví dụ này:
+            <img src="/day10/Homework/ly-thuyet/img/goi ham 2.jpg" alt="Gọi hàm 2">
+        </p>
+        <p>
+            Phạm vi (scope) của một hàm là khoảng không gian bên trong hàm mà nó được khai báo (hoặc là cả chương trình,
+            nếu nó được khai bảo ở top level, tức là nó không nằm trong hàm nào khác).
+        </p>
+        <p>
+            Lưu ý: Điều này chỉ đúng khi định nghĩa một hàm bằng cách sử dụng các cú pháp ở trên (ví dụ function
+            <code>funcName()&#10100;...&#10101;</code>). Điều này có nghĩa rằng function hoisting chỉ hoạt động với cách khai báo hàm thông thường
+            (function declarations) - function hoisting không hoạt động đối với hàm được khai báo bằng biểu thức hàm
+            (function expression). Ví dụ, đoạn code dưới đây sẽ không hoạt động:
+            <img src="/day10/Homework/ly-thuyet/img/goi ham 3.jpg" alt="Gọi hàm 3">
+        </p>
+    </div>
+    <div>
+        <h2>Một hàm có thể gọi chính nó</h2>
+        <p>
+            Ví dụ, đây là một hàm tính giai thừa đệ quy:
+            <img src="/day10/Homework/ly-thuyet/img/ham co the goi chinh no.jpg" alt="Hàm có thể gọi chính nó">
+        </p>
+        <p>
+            Bạn có thể tính giai thừa của <code>1</code> tới <code>3</code> như sau:
+            <img src="/day10/Homework/ly-thuyet/img/ham co the goi chinh no 2.jpg" alt="Hàm có thể gọi chính nó 2">
+        </p>
+    </div>
+</body>
+
+</html>
