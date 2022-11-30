@@ -65,8 +65,7 @@
                     chạy chính nó, hoặc có thể sử dụng hệ thống debug để nhận dạng hàm trong stack traces.
                 </p>
                 <p>
-                    <img src="img/khai bao bien trong ham 2.jpg"
-                        alt="lai báo biến trong hàm VD2">
+                    <img src="img/khai bao bien trong ham 2.jpg" alt="lai báo biến trong hàm VD2">
                 </p>
                 <h3>3. Các ràng buộc về tên hàm</h2>
                     <ol>
@@ -149,8 +148,7 @@
             </li>
         </ol>
         VD: khai báo hàm getSum ở trên là hàm có giá trị trả về.
-        <img src="img/ham co va khong tra ve gia tri.jpg"
-            alt="Hàm có và không trả về giá trị">
+        <img src="img/ham co va khong tra ve gia tri.jpg" alt="Hàm có và không trả về giá trị">
         </p>
     </div>
     <div>
@@ -177,7 +175,8 @@
         </p>
         <p>
             Lưu ý: Điều này chỉ đúng khi định nghĩa một hàm bằng cách sử dụng các cú pháp ở trên (ví dụ function
-            <code>funcName()&#10100;...&#10101;</code>). Điều này có nghĩa rằng function hoisting chỉ hoạt động với cách khai báo hàm thông thường
+            <code>funcName()&#10100;...&#10101;</code>). Điều này có nghĩa rằng function hoisting chỉ hoạt động với cách
+            khai báo hàm thông thường
             (function declarations) - function hoisting không hoạt động đối với hàm được khai báo bằng biểu thức hàm
             (function expression). Ví dụ, đoạn code dưới đây sẽ không hoạt động:
             <img src="img/goi ham 3.jpg" alt="Gọi hàm 3">
@@ -193,7 +192,17 @@
             Bạn có thể tính giai thừa của <code>1</code> tới <code>3</code> như sau:
             <img src="img/ham co the goi chinh no 2.jpg" alt="Hàm có thể gọi chính nó 2">
         </p>
+        <p>
+            Có những cách khác để gọi hàm. Có nhiều trường hợp mà tại đó một hàm cần phải được gọi một cách tự động,
+            hoặc làm thay đổi số lượng đối số truyền vào một hàm, hoặc trong trường hợp mà việc gọi hàm cần được gắn với
+            một object nhất định được quyết định tại thời điểm runtime.
+        </p>
+        <p>
+            Điều đó lại hóa ra là các hàm tự bản thân chúng là các object, và kết quả là, những object này có các phương
+            thức. Một trong số chúng, phương thức <code>apply&#40;&#41;</code>, có thể được dùng để đạt được mục tiêu
+            này.
+        </p>
     </div>
 </body>
 
-</html>
+</html
