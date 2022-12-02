@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTVN day11</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Bài tập kiến thức - Tìm hiểu về "Object"</h1>
+        <div class="introduct">
+            <h2>Object là gì?</h2>
+            <p>
+                <img src="img/introduct.jpg" alt="">
+                Objects trong JavaScript, cũng tương tự như những ngôn ngữ khác, có thể so sánh như đối tượng trong đời
+                thường. Khái niệm của objects trong JavaScript có thể được hiểu như những đối tượng thực tế trong đời
+                thực.
+            </p>
+            <p>
+                Trong JavaScript, một object là một thực thể độc lập, với thuộc tính và kiểu. Lấy cái tách làm ví dụ.
+                Cái tách là một object có những thuộc tính của riêng nó. Một cái tách có màu sắc, thiết kế, trọng lượng,
+                chất liệu tạo ra nó, vân vân... Tương tự như vậy, JavaScript objects có thể có những thuộc tính định
+                nghĩa nên đặc tính của nó.
+            </p>
+            <p>
+            <ol>
+                Đối tượng trong Javascript là một tập hợp các cặp <b>khóa - giá trị</b>, tương tự như bản đồ, từ điển,
+                hay
+                hash-table trong ngôn ngữ lập trình khác.
+                <li>
+                    Đối tượng là một tập hợp các thuộc tính
+                </li>
+                <li>
+                    Thuộc tính là một cặp <b>khóa - giá trị</b> chứa tên và giá trị
+                </li>
+                <li>
+                    Tên thuộc tính là một giá trị duy nhất có thể bị ép buộc vào một chuỗi và trỏ đến một giá trị
+                </li>
+                <li>
+                    Giá trị thuộc tính có thể là bất kỳ giá trị nào, bao gồm các đối tượng khác hoặc các hàm, được liên
+                    kết với tên/khóa
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div class="main">
+            <h3>1. Tạo đối tượng</h3>
+            <p>
+            <ol>
+                Có 3 cách để khai báo đối tượng trong Javascript:
+                <li>
+                    Sử dụng từ khóa &#123;&#125;
+                </li>
+                <li>
+                    Sử dụng từ khóa new <code>Object&#40;&#41;</code>
+                </li>
+                <li>
+                    Sử dụng phương thức static
+                </li>
+            </ol>
+            <img src="img/tao doi tuong.jpg" alt="Tạo đối tượng">
+            </p>
+            <h3>2. Nhận và thiết đặt thuộc tính (Get and Set Properties)</h3>
+            <p>
+                Bây giờ chúng ta đã có 1 đối tượng trống, chúng ta cần thêm các thuộc tính vào nó bằng cách sử dụng các
+                trình truy cập (accessors).
+            </p>
+            <p>
+                Tên thuộc tính hợp lệ bao gồm chữ cái, số, kí tự,.. có thể ép thành một chuỗi, nhưng không được sử dụng
+                các từ dành riêng như <code>function</code>, <code>var</code>, <code>return</code>, .v.v.
+                <img src="img/thiet dat thuoc tinh.jpg" alt="Thiết đặt thuộc tính">
+            </p>
+            <p>
+                Kể từ ES6, chúng ta có một cách viết tắt thuận tiện để thiết lập các thuộc tính:
+                <img src="img/thiet dat thuoc tinh 2.jpg" alt="Thiết đặt thuộc tính 2">
+            </p>
+            <p>
+                Sử dụng một biến hoặc biểu thức làm tên thuộc tính bằng cách đặt nó trong dấu ngoặc [] - đây được gọi là
+                thuộc tính được tính toán
+                <img src="img/thiet dat thuoc tinh 3.jpg" alt="Thiết đặt thuộc tính 3">
+            </p>
+            <p>
+                Thuộc tính của đối tượng có thể được xóa với từ khóa <code>delete</code>
+                <img src="img/thiet dat thuoc tinh 4.jpg" alt="Thiết đặt thuộc tính 4">
+            </p>
+            <h3>3. Phương thức trong đối tượng</h3>
+            <p>
+                Một đối tượng ngoài các thuộc tính ra nó còn chứa hàm gọi là phương thức. Một phương thức là một hàm
+                liên kết với một object, hoặc, có thể nói phương thức là một thuộc tính của object có giá trị là một
+                hàm. Phương thức được định nghĩa giống như cách định nghĩa hàm, ngoài trừ việc chúng phải được gán như
+                là thuộc tính của một object.
+            </p>
+            <p>
+                Thường các phương thức được định nghĩa qua một hàm khởi tạo đối tượng. Ví dụ:
+                <img src="img/phuong thuc doi tuong.jpg" alt="Phương thức đối tượng">
+            </p>
+            <p>
+                Các phương thức bạn cũng có thể định nghĩa bên ngoài hàm khởi tạo. Ví dụ:
+                <img src="img/phuong thuc doi tuong 2.jpg" alt="Phuong thức đối tượng 2">
+            </p>
+            <h3>4. Setter và Getter</h3>
+            <p>
+                Một thuộc tính của của đối tượng còn thiết lập nó là hàm <code>setter</code> hoặc <code>getter</code>,
+                nếu là <code>setter</code> nó chỉ được
+                gọi qua toán tử gán giá trị cho nó, nếu là <code>getter</code> thì chỉ được gọi khi truy cập lấy giá trị
+                thuộc tính.
+            </p>
+            <p>
+                Hàm setter định nghĩa bằng cách cho thêm <code>set</code>, hàm getter định nghĩa bằng cách cho thêm
+                <code>get</code>
+                <img src="img/setter va getter.jpg" alt="Setter và Getter">
+            </p>
+            <p>
+                Trong trường hợp muốn định nghĩa <code>setter</code> / <code>getter</code> trong hàm tạo đối tượng thì
+                bạn cần định nghĩa theo
+                nguyên tắc thêm một thuộc tính vào đối tượng đã có với lệnh <code>Object.defineProperty</code>
+                <img src="img/setter va getter 2.jpg" alt="Setter và Getter 2">
+            </p>
+            <p>
+                Ví dụ trên định nghĩa lại trong hàm tạo:
+                <img src="img/setter va getter 3.jpg" alt="Setter và Getter 3">
+            </p>
+            <h3>5. Sử dụng this để tham chiếu tới đối tượng</h3>
+            <p>
+                Trong một đối tượng thông thường, <code>this</code> đề cập đến đối tượng mà nó được định nghĩa. Ví dụ:
+                <img src="img/su dung this.jpg" alt="Sử dụng this tham chiếu">
+            </p>
+            <h3>6. So sánh Objects</h3>
+            <p>
+                Trong JavaScript những object là kiểu tham chiếu. Hai đối tượng tách biệt không bao giờ bằng nhau, thậm
+                chí nếu chúng có cùng những thuộc tính. Chỉ khi nó so sánh với chính nó thì kết quả mới là true.
+            </p>
+            <p>
+                Ví dụ:
+                <img src="img/so sanh objects.jpg" alt="So sánh Object">
+                <img src="img/so sanh objects 2.jpg" alt="So sánh Object">
+                <img src="img/so sanh objects 3.jpg" alt="So sánh Object">
+            </p>
+        </div>
+        <div class="constructor">
+            <h2>Constructor là gì?</h2>
+            <p>
+                Phương thức <code>constructo</code>r là một phương thức đặc biệt dùng để khởi tạo 1 object và được tạo ở
+                trong <code>clas</code>s.
+            </p>
+            <p>
+                Cú pháp:
+                <img src="img/constructor.jpg" alt="Constructor">
+            </p>
+            <p>
+                Ví dụ:
+                <img src="img/constructor 2.jpg" alt="Constructor 2">
+            </p>
+            <p>
+                Chỉ có duy nhất 1 phương thức đặc biệt tên là "constructor" ở trong class. Có nhiều hơn 1 phương thức
+                <code>constructor</code> ở trong class thì sẽ gây ra lỗi <code>SyntaxError</code>.
+            </p>
+            <p>
+                Một constructor có thể sử dụng từ khóa <code>super</code> để gọi đến constructor của class cha.
+            </p>
+            <p>
+                Nếu bạn không chỉ định 1 phương thức constructor thì constructor mặc định sẽ được sử dụng
+            </p>
+            <p>
+                Một ví dụ nữa sử dụng phương thức <code>constructo</code>r:
+                <img src="img/constructor 3.jpg" alt="Constructor 3">
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
